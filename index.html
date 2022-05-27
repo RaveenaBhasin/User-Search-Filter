@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Filter</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search user by name"
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterUser('All')">All Roles</button>
+        <button class="button-value" onclick="filterUser('Frontend')">
+          Frontend Developer
+        </button>
+        <button class="button-value" onclick="filterUser('Backend')">
+          Backend Developer
+        </button>
+        <button class="button-value" onclick="filterUser('FullStack')">
+          FullStack Developer
+        </button>
+        <button class="button-value" onclick="filterUser('Product')">
+          Product Manager
+        </button>
+      </div>
+      <div id="users"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
